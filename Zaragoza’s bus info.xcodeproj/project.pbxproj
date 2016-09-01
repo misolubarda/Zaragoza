@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB9F63F61D787DB800832CC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F63F51D787DB800832CC6 /* AppDelegate.swift */; };
-		EB9F63F81D787DB800832CC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F63F71D787DB800832CC6 /* ViewController.swift */; };
-		EB9F63FB1D787DB800832CC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9F63F91D787DB800832CC6 /* Main.storyboard */; };
 		EB9F63FD1D787DB800832CC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB9F63FC1D787DB800832CC6 /* Assets.xcassets */; };
-		EB9F64001D787DB800832CC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9F63FE1D787DB800832CC6 /* LaunchScreen.storyboard */; };
 		EB9F640B1D787DB800832CC6 /* Zaragoza_s_bus_infoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F640A1D787DB800832CC6 /* Zaragoza_s_bus_infoTests.swift */; };
 		EB9F64161D787DB800832CC6 /* Zaragoza_s_bus_infoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64151D787DB800832CC6 /* Zaragoza_s_bus_infoUITests.swift */; };
+		EB9F64281D787F7500832CC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9F64261D787F7500832CC6 /* LaunchScreen.storyboard */; };
+		EB9F64291D787F7500832CC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9F64271D787F7500832CC6 /* Main.storyboard */; };
+		EB9F642C1D787F8500832CC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F642A1D787F8500832CC6 /* AppDelegate.swift */; };
+		EB9F642D1D787F8500832CC6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB9F642B1D787F8500832CC6 /* Info.plist */; };
+		EB9F642F1D787FC700832CC6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F642E1D787FC700832CC6 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +36,18 @@
 
 /* Begin PBXFileReference section */
 		EB9F63F21D787DB800832CC6 /* Zaragoza’s bus info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zaragoza’s bus info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB9F63F51D787DB800832CC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EB9F63F71D787DB800832CC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EB9F63FA1D787DB800832CC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB9F63FC1D787DB800832CC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EB9F63FF1D787DB800832CC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EB9F64011D787DB800832CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB9F64061D787DB800832CC6 /* Zaragoza’s bus infoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zaragoza’s bus infoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9F640A1D787DB800832CC6 /* Zaragoza_s_bus_infoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zaragoza_s_bus_infoTests.swift; sourceTree = "<group>"; };
 		EB9F640C1D787DB800832CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB9F64111D787DB800832CC6 /* Zaragoza’s bus infoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zaragoza’s bus infoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9F64151D787DB800832CC6 /* Zaragoza_s_bus_infoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zaragoza_s_bus_infoUITests.swift; sourceTree = "<group>"; };
 		EB9F64171D787DB800832CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB9F64261D787F7500832CC6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB9F64271D787F7500832CC6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EB9F642A1D787F8500832CC6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB9F642B1D787F8500832CC6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB9F642E1D787FC700832CC6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +98,10 @@
 		EB9F63F41D787DB800832CC6 /* Zaragoza’s bus info */ = {
 			isa = PBXGroup;
 			children = (
-				EB9F63F51D787DB800832CC6 /* AppDelegate.swift */,
-				EB9F63F71D787DB800832CC6 /* ViewController.swift */,
-				EB9F63F91D787DB800832CC6 /* Main.storyboard */,
+				EB9F64251D787F3900832CC6 /* Entry point */,
+				EB9F64241D787F2500832CC6 /* User interface */,
+				EB9F64231D787F1000832CC6 /* Model */,
 				EB9F63FC1D787DB800832CC6 /* Assets.xcassets */,
-				EB9F63FE1D787DB800832CC6 /* LaunchScreen.storyboard */,
-				EB9F64011D787DB800832CC6 /* Info.plist */,
 			);
 			path = "Zaragoza’s bus info";
 			sourceTree = "<group>";
@@ -123,6 +122,32 @@
 				EB9F64171D787DB800832CC6 /* Info.plist */,
 			);
 			path = "Zaragoza’s bus infoUITests";
+			sourceTree = "<group>";
+		};
+		EB9F64231D787F1000832CC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB9F64241D787F2500832CC6 /* User interface */ = {
+			isa = PBXGroup;
+			children = (
+				EB9F64261D787F7500832CC6 /* LaunchScreen.storyboard */,
+				EB9F64271D787F7500832CC6 /* Main.storyboard */,
+				EB9F642E1D787FC700832CC6 /* MainViewController.swift */,
+			);
+			path = "User interface";
+			sourceTree = "<group>";
+		};
+		EB9F64251D787F3900832CC6 /* Entry point */ = {
+			isa = PBXGroup;
+			children = (
+				EB9F642A1D787F8500832CC6 /* AppDelegate.swift */,
+				EB9F642B1D787F8500832CC6 /* Info.plist */,
+			);
+			path = "Entry point";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +254,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB9F64001D787DB800832CC6 /* LaunchScreen.storyboard in Resources */,
+				EB9F642D1D787F8500832CC6 /* Info.plist in Resources */,
+				EB9F64291D787F7500832CC6 /* Main.storyboard in Resources */,
 				EB9F63FD1D787DB800832CC6 /* Assets.xcassets in Resources */,
-				EB9F63FB1D787DB800832CC6 /* Main.storyboard in Resources */,
+				EB9F64281D787F7500832CC6 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +282,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB9F63F81D787DB800832CC6 /* ViewController.swift in Sources */,
-				EB9F63F61D787DB800832CC6 /* AppDelegate.swift in Sources */,
+				EB9F642C1D787F8500832CC6 /* AppDelegate.swift in Sources */,
+				EB9F642F1D787FC700832CC6 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,25 +317,6 @@
 			targetProxy = EB9F64121D787DB800832CC6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		EB9F63F91D787DB800832CC6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EB9F63FA1D787DB800832CC6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EB9F63FE1D787DB800832CC6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EB9F63FF1D787DB800832CC6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EB9F64181D787DB800832CC6 /* Debug */ = {
@@ -399,10 +406,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Zaragoza’s bus info/Info.plist";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Zaragoza’s bus info/Entry point/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "misolubarda.conichi.zaragoza.Zaragoza-s-bus-info";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -410,7 +419,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Zaragoza’s bus info/Info.plist";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Zaragoza’s bus info/Entry point/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "misolubarda.conichi.zaragoza.Zaragoza-s-bus-info";
 				PRODUCT_NAME = "$(TARGET_NAME)";
