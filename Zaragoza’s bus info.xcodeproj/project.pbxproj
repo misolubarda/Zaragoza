@@ -12,7 +12,6 @@
 		EB9F64281D787F7500832CC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9F64261D787F7500832CC6 /* LaunchScreen.storyboard */; };
 		EB9F64291D787F7500832CC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9F64271D787F7500832CC6 /* Main.storyboard */; };
 		EB9F642C1D787F8500832CC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F642A1D787F8500832CC6 /* AppDelegate.swift */; };
-		EB9F642D1D787F8500832CC6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB9F642B1D787F8500832CC6 /* Info.plist */; };
 		EB9F642F1D787FC700832CC6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F642E1D787FC700832CC6 /* MainViewController.swift */; };
 		EB9F64351D78851B00832CC6 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64331D7880DE00832CC6 /* APIRequest.swift */; };
 		EB9F64371D78864700832CC6 /* BusStopsAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64361D78864700832CC6 /* BusStopsAPIRequest.swift */; };
@@ -24,7 +23,10 @@
 		EB9F64431D788D2C00832CC6 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64331D7880DE00832CC6 /* APIRequest.swift */; };
 		EB9F64461D78A6BC00832CC6 /* BusStopsEmpty.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB9F64441D78A6BC00832CC6 /* BusStopsEmpty.txt */; };
 		EB9F64471D78A6BC00832CC6 /* BusStopsOneLocation.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB9F64451D78A6BC00832CC6 /* BusStopsOneLocation.txt */; };
-		EB9F64491D78AF1400832CC6 /* GoogleMapImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64481D78AF1400832CC6 /* GoogleMapImageRequest.swift */; };
+		EB9F644D1D78B50300832CC6 /* BusStopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F644C1D78B50300832CC6 /* BusStopCell.swift */; };
+		EB9F64511D78C9F600832CC6 /* MapImageAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64501D78C9F600832CC6 /* MapImageAPIRequest.swift */; };
+		EBAFA86E1D78CAAD00A3DF0A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB9F642B1D787F8500832CC6 /* Info.plist */; };
+		EBAFA86F1D78CAC100A3DF0A /* MapImageAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64501D78C9F600832CC6 /* MapImageAPIRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +66,8 @@
 		EB9F643F1D7889F000832CC6 /* BusStopsPopulated.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BusStopsPopulated.txt; sourceTree = "<group>"; };
 		EB9F64441D78A6BC00832CC6 /* BusStopsEmpty.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BusStopsEmpty.txt; sourceTree = "<group>"; };
 		EB9F64451D78A6BC00832CC6 /* BusStopsOneLocation.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BusStopsOneLocation.txt; sourceTree = "<group>"; };
-		EB9F64481D78AF1400832CC6 /* GoogleMapImageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapImageRequest.swift; sourceTree = "<group>"; };
+		EB9F644C1D78B50300832CC6 /* BusStopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStopCell.swift; sourceTree = "<group>"; };
+		EB9F64501D78C9F600832CC6 /* MapImageAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapImageAPIRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +162,7 @@
 				EB9F64261D787F7500832CC6 /* LaunchScreen.storyboard */,
 				EB9F64271D787F7500832CC6 /* Main.storyboard */,
 				EB9F642E1D787FC700832CC6 /* MainViewController.swift */,
+				EB9F644C1D78B50300832CC6 /* BusStopCell.swift */,
 			);
 			path = "User interface";
 			sourceTree = "<group>";
@@ -177,7 +181,7 @@
 			children = (
 				EB9F64331D7880DE00832CC6 /* APIRequest.swift */,
 				EB9F64361D78864700832CC6 /* BusStopsAPIRequest.swift */,
-				EB9F64481D78AF1400832CC6 /* GoogleMapImageRequest.swift */,
+				EB9F64501D78C9F600832CC6 /* MapImageAPIRequest.swift */,
 			);
 			path = Server;
 			sourceTree = "<group>";
@@ -258,6 +262,7 @@
 				TargetAttributes = {
 					EB9F63F11D787DB800832CC6 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GF94NY638N;
 					};
 					EB9F64051D787DB800832CC6 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -294,7 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB9F642D1D787F8500832CC6 /* Info.plist in Resources */,
+				EBAFA86E1D78CAAD00A3DF0A /* Info.plist in Resources */,
 				EB9F64291D787F7500832CC6 /* Main.storyboard in Resources */,
 				EB9F63FD1D787DB800832CC6 /* Assets.xcassets in Resources */,
 				EB9F64281D787F7500832CC6 /* LaunchScreen.storyboard in Resources */,
@@ -326,9 +331,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB9F643C1D7887D100832CC6 /* BusStop.swift in Sources */,
-				EB9F64491D78AF1400832CC6 /* GoogleMapImageRequest.swift in Sources */,
 				EB9F642C1D787F8500832CC6 /* AppDelegate.swift in Sources */,
+				EB9F64511D78C9F600832CC6 /* MapImageAPIRequest.swift in Sources */,
 				EB9F64371D78864700832CC6 /* BusStopsAPIRequest.swift in Sources */,
+				EB9F644D1D78B50300832CC6 /* BusStopCell.swift in Sources */,
 				EB9F64351D78851B00832CC6 /* APIRequest.swift in Sources */,
 				EB9F642F1D787FC700832CC6 /* MainViewController.swift in Sources */,
 			);
@@ -338,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBAFA86F1D78CAC100A3DF0A /* MapImageAPIRequest.swift in Sources */,
 				EB9F64411D788A9C00832CC6 /* BusStop.swift in Sources */,
 				EB9F643E1D78898400832CC6 /* BusAPIRequestTests.swift in Sources */,
 				EB9F64431D788D2C00832CC6 /* APIRequest.swift in Sources */,
@@ -457,9 +464,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/Zaragoza’s bus info/Entry point/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "misolubarda.conichi.zaragoza.Zaragoza-s-bus-info";
+				PRODUCT_BUNDLE_IDENTIFIER = com.misolubarda.test001;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -470,9 +478,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/Zaragoza’s bus info/Entry point/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "misolubarda.conichi.zaragoza.Zaragoza-s-bus-info";
+				PRODUCT_BUNDLE_IDENTIFIER = com.misolubarda.test001;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -545,6 +554,7 @@
 				EB9F641C1D787DB800832CC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB9F641D1D787DB800832CC6 /* Build configuration list for PBXNativeTarget "Zaragoza’s bus infoTests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +563,7 @@
 				EB9F641F1D787DB800832CC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB9F64201D787DB800832CC6 /* Build configuration list for PBXNativeTarget "Zaragoza’s bus infoUITests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +572,7 @@
 				EB9F64221D787DB800832CC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
