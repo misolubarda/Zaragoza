@@ -1,5 +1,5 @@
 //
-//  GoogleMapImageRequest.swift
+//  GoogleMapImageAPIRequest.swift
 //  Zaragoza’s bus info
 //
 //  Created by Miso Lubarda on 01/09/16.
@@ -8,7 +8,9 @@
 
 import Foundation
 
-struct GoogleMapImageAPIRequest: APIRequest {
+import Foundation
+
+struct MapImageAPIRequest: APIRequest {
     
     /// Required by protocol (see APIRequest)
     var baseURLString: String = "http://maps.googleapis.com/"
@@ -27,17 +29,13 @@ struct GoogleMapImageAPIRequest: APIRequest {
     /// Required by protocol (see APIRequest)
     var parameters: [String: String]?
     
-    init(responseQueue: dispatch_queue_t) {
+    init(responseQueue: dispatch_queue_t = dispatch_get_main_queue()) {
         self.responseQueue = responseQueue
-    }
-    
-    init() {
-        self.responseQueue = dispatch_get_main_queue()
     }
 }
 
-extension GoogleMapImageAPIRequest {
-    enum GoogleMapImageAPIRequestError: ErrorType {
+extension MapImageAPIRequest {
+    enum MapImageAPIRequestError: ErrorType {
         case JSONFromData, Locations
     }
 }
