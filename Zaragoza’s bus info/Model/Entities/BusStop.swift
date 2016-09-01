@@ -6,13 +6,14 @@
 //  Copyright © 2016 Miso Lubarda. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-struct BusStop {
+class BusStop {
     var number: Int
     var name: String
     var lat: Double
     var lon: Double
+    
     var mapImage: NSData?
     
     init(jsonDict: [String: AnyObject]) throws {
@@ -29,10 +30,38 @@ struct BusStop {
             throw BusStopError.Longitude
         }
 
+        
         self.number = number
         self.name = name
         self.lat = lat
         self.lon = lon
+    }
+    
+    func getImageWithCompletion(completion: (image: NSData?) -> Void) {
+        if let mapImage = mapImage {
+            debugPrint("image already exists")
+            completion(image: mapImage)
+            return
+        }
+        
+        var request = MapImageAPIRequest()
+        request.parameters = ["center"  : "\(lat),\(lon)",
+                              "zoom"    : "15",
+                              "size"    : "150x150",
+                              "sensor"  : "true"]
+        
+        request.executeWithCompletion { [weak self] (response) in
+            do {
+                let imageData = try response()
+                self?.mapImage = imageData
+                debugPrint("image downloaded")
+                completion(image: imageData)
+            } catch let error {
+                //Should log error or connect it with crash report
+                debugPrint("image didn't get downloaded: \(error)")
+                completion(image: nil)
+            }
+        }
     }
 }
 

@@ -41,12 +41,8 @@ struct BusStopsAPIRequest: APIRequest {
     /// Required by protocol (see APIRequest)
     var parameters: [String : String]? = nil
     
-    init(responseQueue: dispatch_queue_t) {
+    init(responseQueue: dispatch_queue_t = dispatch_get_main_queue()) {
         self.responseQueue = responseQueue
-    }
-    
-    init() {
-        self.responseQueue = dispatch_get_main_queue()
     }
 }
 
