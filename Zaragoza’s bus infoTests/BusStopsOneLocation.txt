@@ -1,0 +1,1 @@
+{"locations":[{"id":"731","title":"PLZ CANTERAS","lines":["C1"],"lat":41.63139435772203,"lon":-0.886143585091619,"subtitle":"(731) C1"}]}

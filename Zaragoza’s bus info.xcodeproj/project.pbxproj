@@ -8,13 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		EB9F63FD1D787DB800832CC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB9F63FC1D787DB800832CC6 /* Assets.xcassets */; };
-		EB9F640B1D787DB800832CC6 /* Zaragoza_s_bus_infoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F640A1D787DB800832CC6 /* Zaragoza_s_bus_infoTests.swift */; };
 		EB9F64161D787DB800832CC6 /* Zaragoza_s_bus_infoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64151D787DB800832CC6 /* Zaragoza_s_bus_infoUITests.swift */; };
 		EB9F64281D787F7500832CC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9F64261D787F7500832CC6 /* LaunchScreen.storyboard */; };
 		EB9F64291D787F7500832CC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9F64271D787F7500832CC6 /* Main.storyboard */; };
 		EB9F642C1D787F8500832CC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F642A1D787F8500832CC6 /* AppDelegate.swift */; };
 		EB9F642D1D787F8500832CC6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB9F642B1D787F8500832CC6 /* Info.plist */; };
 		EB9F642F1D787FC700832CC6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F642E1D787FC700832CC6 /* MainViewController.swift */; };
+		EB9F64351D78851B00832CC6 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64331D7880DE00832CC6 /* APIRequest.swift */; };
+		EB9F64371D78864700832CC6 /* BusAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64361D78864700832CC6 /* BusAPIRequest.swift */; };
+		EB9F643C1D7887D100832CC6 /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F643B1D7887D100832CC6 /* BusStop.swift */; };
+		EB9F643E1D78898400832CC6 /* BusAPIRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F643D1D78898400832CC6 /* BusAPIRequestTests.swift */; };
+		EB9F64401D7889F000832CC6 /* BusStopsPopulated.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB9F643F1D7889F000832CC6 /* BusStopsPopulated.txt */; };
+		EB9F64411D788A9C00832CC6 /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F643B1D7887D100832CC6 /* BusStop.swift */; };
+		EB9F64421D788AA400832CC6 /* BusAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64361D78864700832CC6 /* BusAPIRequest.swift */; };
+		EB9F64431D788D2C00832CC6 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64331D7880DE00832CC6 /* APIRequest.swift */; };
+		EB9F64461D78A6BC00832CC6 /* BusStopsEmpty.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB9F64441D78A6BC00832CC6 /* BusStopsEmpty.txt */; };
+		EB9F64471D78A6BC00832CC6 /* BusStopsOneLocation.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB9F64451D78A6BC00832CC6 /* BusStopsOneLocation.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +47,6 @@
 		EB9F63F21D787DB800832CC6 /* Zaragoza’s bus info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zaragoza’s bus info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9F63FC1D787DB800832CC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB9F64061D787DB800832CC6 /* Zaragoza’s bus infoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zaragoza’s bus infoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB9F640A1D787DB800832CC6 /* Zaragoza_s_bus_infoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zaragoza_s_bus_infoTests.swift; sourceTree = "<group>"; };
 		EB9F640C1D787DB800832CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB9F64111D787DB800832CC6 /* Zaragoza’s bus infoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zaragoza’s bus infoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9F64151D787DB800832CC6 /* Zaragoza_s_bus_infoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zaragoza_s_bus_infoUITests.swift; sourceTree = "<group>"; };
@@ -48,6 +56,13 @@
 		EB9F642A1D787F8500832CC6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB9F642B1D787F8500832CC6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB9F642E1D787FC700832CC6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EB9F64331D7880DE00832CC6 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		EB9F64361D78864700832CC6 /* BusAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusAPIRequest.swift; sourceTree = "<group>"; };
+		EB9F643B1D7887D100832CC6 /* BusStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStop.swift; sourceTree = "<group>"; };
+		EB9F643D1D78898400832CC6 /* BusAPIRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusAPIRequestTests.swift; sourceTree = "<group>"; };
+		EB9F643F1D7889F000832CC6 /* BusStopsPopulated.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BusStopsPopulated.txt; sourceTree = "<group>"; };
+		EB9F64441D78A6BC00832CC6 /* BusStopsEmpty.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BusStopsEmpty.txt; sourceTree = "<group>"; };
+		EB9F64451D78A6BC00832CC6 /* BusStopsOneLocation.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BusStopsOneLocation.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				EB9F64251D787F3900832CC6 /* Entry point */,
-				EB9F64241D787F2500832CC6 /* User interface */,
 				EB9F64231D787F1000832CC6 /* Model */,
+				EB9F64241D787F2500832CC6 /* User interface */,
 				EB9F63FC1D787DB800832CC6 /* Assets.xcassets */,
 			);
 			path = "Zaragoza’s bus info";
@@ -109,8 +124,11 @@
 		EB9F64091D787DB800832CC6 /* Zaragoza’s bus infoTests */ = {
 			isa = PBXGroup;
 			children = (
-				EB9F640A1D787DB800832CC6 /* Zaragoza_s_bus_infoTests.swift */,
+				EB9F64441D78A6BC00832CC6 /* BusStopsEmpty.txt */,
+				EB9F64451D78A6BC00832CC6 /* BusStopsOneLocation.txt */,
+				EB9F643F1D7889F000832CC6 /* BusStopsPopulated.txt */,
 				EB9F640C1D787DB800832CC6 /* Info.plist */,
+				EB9F643D1D78898400832CC6 /* BusAPIRequestTests.swift */,
 			);
 			path = "Zaragoza’s bus infoTests";
 			sourceTree = "<group>";
@@ -127,6 +145,8 @@
 		EB9F64231D787F1000832CC6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EB9F64381D78875000832CC6 /* Entities */,
+				EB9F64321D78807D00832CC6 /* Server */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,6 +168,23 @@
 				EB9F642B1D787F8500832CC6 /* Info.plist */,
 			);
 			path = "Entry point";
+			sourceTree = "<group>";
+		};
+		EB9F64321D78807D00832CC6 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				EB9F64331D7880DE00832CC6 /* APIRequest.swift */,
+				EB9F64361D78864700832CC6 /* BusAPIRequest.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		EB9F64381D78875000832CC6 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				EB9F643B1D7887D100832CC6 /* BusStop.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +302,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB9F64471D78A6BC00832CC6 /* BusStopsOneLocation.txt in Resources */,
+				EB9F64401D7889F000832CC6 /* BusStopsPopulated.txt in Resources */,
+				EB9F64461D78A6BC00832CC6 /* BusStopsEmpty.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +322,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB9F643C1D7887D100832CC6 /* BusStop.swift in Sources */,
 				EB9F642C1D787F8500832CC6 /* AppDelegate.swift in Sources */,
+				EB9F64371D78864700832CC6 /* BusAPIRequest.swift in Sources */,
+				EB9F64351D78851B00832CC6 /* APIRequest.swift in Sources */,
 				EB9F642F1D787FC700832CC6 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +334,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB9F640B1D787DB800832CC6 /* Zaragoza_s_bus_infoTests.swift in Sources */,
+				EB9F64411D788A9C00832CC6 /* BusStop.swift in Sources */,
+				EB9F643E1D78898400832CC6 /* BusAPIRequestTests.swift in Sources */,
+				EB9F64431D788D2C00832CC6 /* APIRequest.swift in Sources */,
+				EB9F64421D788AA400832CC6 /* BusAPIRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,10 +477,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Zaragoza’s bus infoTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "misolubarda.conichi.zaragoza.Zaragoza-s-bus-infoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zaragoza’s bus info.app/Zaragoza’s bus info";
 			};
 			name = Debug;
@@ -443,6 +491,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Zaragoza’s bus infoTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "misolubarda.conichi.zaragoza.Zaragoza-s-bus-infoTests";
