@@ -77,7 +77,7 @@ extension APIRequest {
             let parametersArray = parameters.map { (key, value) in
                 return "\(key)=\(value)"
             }
-            let parametersString = "?" + parametersArray.joinWithSeparator(",")
+            let parametersString = "?" + parametersArray.joinWithSeparator("&")
             guard let urlWithParameters = NSURL(string: parametersString, relativeToURL: url) else {
                 completion(response: { throw APIRequestError.URL })
                 return
