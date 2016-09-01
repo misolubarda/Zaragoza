@@ -21,6 +21,9 @@ protocol APIRequest {
     /// Endpoint URL path, relative to baseURL
     var endpointPath: String {get}
     
+    /// Endpoint parameters
+    var parameters: [String: String]? {get}
+        
     /// Queue on which to provide response.
     var responseQueue: dispatch_queue_t {get}
     
@@ -66,9 +69,20 @@ extension APIRequest {
             completion(response: { throw  APIRequestError.URL })
             return
         }
-        guard let url = NSURL(string: endpointPath, relativeToURL: baseURL) else {
+        guard var url = NSURL(string: endpointPath, relativeToURL: baseURL) else {
             completion(response: { throw APIRequestError.URL })
             return
+        }
+        if let parameters = parameters {
+            let parametersArray = parameters.map { (key, value) in
+                return "\(key)=\(value)"
+            }
+            let parametersString = "?" + parametersArray.joinWithSeparator(",")
+            guard let urlWithParameters = NSURL(string: parametersString, relativeToURL: url) else {
+                completion(response: { throw APIRequestError.URL })
+                return
+            }
+            url = urlWithParameters
         }
         let dataTask = session.dataTaskWithURL(url) { (data: NSData?, response: NSURLResponse?, error: NSError?) in
             dispatch_async(self.responseQueue, {

@@ -24,7 +24,7 @@ class BusAPIRequestTests: XCTestCase {
         
         let busStopsData = busStopsDataFromFile("BusStopsPopulated")
 
-        let busStopsRequest = BusAPIRequest()
+        let busStopsRequest = BusStopsAPIRequest()
         
         let busStops = try? busStopsRequest.responseParsing(data: busStopsData)
         XCTAssertNotNil(busStops, "Parsing bus stops should succeed.")
@@ -41,7 +41,7 @@ class BusAPIRequestTests: XCTestCase {
         
         let busStopsData = busStopsDataFromFile("BusStopsOneLocation")
         
-        let busStopsRequest = BusAPIRequest()
+        let busStopsRequest = BusStopsAPIRequest()
         
         let busStops = try? busStopsRequest.responseParsing(data: busStopsData)
         XCTAssertNotNil(busStops, "Parsing bus stops should succeed.")
@@ -58,7 +58,7 @@ class BusAPIRequestTests: XCTestCase {
         
         let busStopsData = busStopsDataFromFile("BusStopsEmpty")
 
-        let busStopsRequest = BusAPIRequest()
+        let busStopsRequest = BusStopsAPIRequest()
         
         let busStops = try? busStopsRequest.responseParsing(data: busStopsData)
         XCTAssertNotNil(busStops, "Parsing bus stops should succeed.")

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct BusAPIRequest: APIRequest {
+struct BusStopsAPIRequest: APIRequest {
     
     /// Required by protocol (see APIRequest)
     var baseURLString: String = "http://api.dndzgz.com/"
@@ -38,6 +38,9 @@ struct BusAPIRequest: APIRequest {
         return busStops
     }
     
+    /// Required by protocol (see APIRequest)
+    var parameters: [String : String]? = nil
+    
     init(responseQueue: dispatch_queue_t) {
         self.responseQueue = responseQueue
     }
@@ -47,7 +50,7 @@ struct BusAPIRequest: APIRequest {
     }
 }
 
-extension BusAPIRequest {
+extension BusStopsAPIRequest {
     enum BusAPIRequestError: ErrorType {
         case JSONFromData, Locations
     }

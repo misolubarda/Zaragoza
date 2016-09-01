@@ -15,15 +15,16 @@
 		EB9F642D1D787F8500832CC6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB9F642B1D787F8500832CC6 /* Info.plist */; };
 		EB9F642F1D787FC700832CC6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F642E1D787FC700832CC6 /* MainViewController.swift */; };
 		EB9F64351D78851B00832CC6 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64331D7880DE00832CC6 /* APIRequest.swift */; };
-		EB9F64371D78864700832CC6 /* BusAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64361D78864700832CC6 /* BusAPIRequest.swift */; };
+		EB9F64371D78864700832CC6 /* BusStopsAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64361D78864700832CC6 /* BusStopsAPIRequest.swift */; };
 		EB9F643C1D7887D100832CC6 /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F643B1D7887D100832CC6 /* BusStop.swift */; };
 		EB9F643E1D78898400832CC6 /* BusAPIRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F643D1D78898400832CC6 /* BusAPIRequestTests.swift */; };
 		EB9F64401D7889F000832CC6 /* BusStopsPopulated.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB9F643F1D7889F000832CC6 /* BusStopsPopulated.txt */; };
 		EB9F64411D788A9C00832CC6 /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F643B1D7887D100832CC6 /* BusStop.swift */; };
-		EB9F64421D788AA400832CC6 /* BusAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64361D78864700832CC6 /* BusAPIRequest.swift */; };
+		EB9F64421D788AA400832CC6 /* BusStopsAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64361D78864700832CC6 /* BusStopsAPIRequest.swift */; };
 		EB9F64431D788D2C00832CC6 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64331D7880DE00832CC6 /* APIRequest.swift */; };
 		EB9F64461D78A6BC00832CC6 /* BusStopsEmpty.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB9F64441D78A6BC00832CC6 /* BusStopsEmpty.txt */; };
 		EB9F64471D78A6BC00832CC6 /* BusStopsOneLocation.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB9F64451D78A6BC00832CC6 /* BusStopsOneLocation.txt */; };
+		EB9F64491D78AF1400832CC6 /* GoogleMapImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64481D78AF1400832CC6 /* GoogleMapImageRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +58,13 @@
 		EB9F642B1D787F8500832CC6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB9F642E1D787FC700832CC6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EB9F64331D7880DE00832CC6 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
-		EB9F64361D78864700832CC6 /* BusAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusAPIRequest.swift; sourceTree = "<group>"; };
+		EB9F64361D78864700832CC6 /* BusStopsAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStopsAPIRequest.swift; sourceTree = "<group>"; };
 		EB9F643B1D7887D100832CC6 /* BusStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStop.swift; sourceTree = "<group>"; };
 		EB9F643D1D78898400832CC6 /* BusAPIRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusAPIRequestTests.swift; sourceTree = "<group>"; };
 		EB9F643F1D7889F000832CC6 /* BusStopsPopulated.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BusStopsPopulated.txt; sourceTree = "<group>"; };
 		EB9F64441D78A6BC00832CC6 /* BusStopsEmpty.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BusStopsEmpty.txt; sourceTree = "<group>"; };
 		EB9F64451D78A6BC00832CC6 /* BusStopsOneLocation.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BusStopsOneLocation.txt; sourceTree = "<group>"; };
+		EB9F64481D78AF1400832CC6 /* GoogleMapImageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapImageRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				EB9F64331D7880DE00832CC6 /* APIRequest.swift */,
-				EB9F64361D78864700832CC6 /* BusAPIRequest.swift */,
+				EB9F64361D78864700832CC6 /* BusStopsAPIRequest.swift */,
+				EB9F64481D78AF1400832CC6 /* GoogleMapImageRequest.swift */,
 			);
 			path = Server;
 			sourceTree = "<group>";
@@ -323,8 +326,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB9F643C1D7887D100832CC6 /* BusStop.swift in Sources */,
+				EB9F64491D78AF1400832CC6 /* GoogleMapImageRequest.swift in Sources */,
 				EB9F642C1D787F8500832CC6 /* AppDelegate.swift in Sources */,
-				EB9F64371D78864700832CC6 /* BusAPIRequest.swift in Sources */,
+				EB9F64371D78864700832CC6 /* BusStopsAPIRequest.swift in Sources */,
 				EB9F64351D78851B00832CC6 /* APIRequest.swift in Sources */,
 				EB9F642F1D787FC700832CC6 /* MainViewController.swift in Sources */,
 			);
@@ -337,7 +341,7 @@
 				EB9F64411D788A9C00832CC6 /* BusStop.swift in Sources */,
 				EB9F643E1D78898400832CC6 /* BusAPIRequestTests.swift in Sources */,
 				EB9F64431D788D2C00832CC6 /* APIRequest.swift in Sources */,
-				EB9F64421D788AA400832CC6 /* BusAPIRequest.swift in Sources */,
+				EB9F64421D788AA400832CC6 /* BusStopsAPIRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
