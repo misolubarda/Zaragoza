@@ -1,0 +1,1 @@
+{"estimates":[{"line":"C1","direction":"COMPLEJO FUNERARIO.","estimate":null},{"line":"C1","direction":"COMPLEJO FUNERARIO.","estimate":12},{"line":"34","direction":"PARQUE DE ATRACCIONES.","estimate":8},{"line":"34","direction":"PARQUE DE ATRACCIONES.","estimate":9}]}

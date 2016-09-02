@@ -8,7 +8,7 @@
 
 import XCTest
 
-class BusAPIRequestTests: XCTestCase {
+class BusStopsAPIRequestTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

@@ -16,7 +16,7 @@
 		EB9F64351D78851B00832CC6 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64331D7880DE00832CC6 /* APIRequest.swift */; };
 		EB9F64371D78864700832CC6 /* BusStopsAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64361D78864700832CC6 /* BusStopsAPIRequest.swift */; };
 		EB9F643C1D7887D100832CC6 /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F643B1D7887D100832CC6 /* BusStop.swift */; };
-		EB9F643E1D78898400832CC6 /* BusAPIRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F643D1D78898400832CC6 /* BusAPIRequestTests.swift */; };
+		EB9F643E1D78898400832CC6 /* BusStopsAPIRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F643D1D78898400832CC6 /* BusStopsAPIRequestTests.swift */; };
 		EB9F64401D7889F000832CC6 /* BusStopsPopulated.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB9F643F1D7889F000832CC6 /* BusStopsPopulated.txt */; };
 		EB9F64411D788A9C00832CC6 /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F643B1D7887D100832CC6 /* BusStop.swift */; };
 		EB9F64421D788AA400832CC6 /* BusStopsAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64361D78864700832CC6 /* BusStopsAPIRequest.swift */; };
@@ -25,8 +25,19 @@
 		EB9F64471D78A6BC00832CC6 /* BusStopsOneLocation.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB9F64451D78A6BC00832CC6 /* BusStopsOneLocation.txt */; };
 		EB9F644D1D78B50300832CC6 /* BusStopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F644C1D78B50300832CC6 /* BusStopCell.swift */; };
 		EB9F64511D78C9F600832CC6 /* MapImageAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64501D78C9F600832CC6 /* MapImageAPIRequest.swift */; };
+		EBAB39731D7967890024D72D /* BusArrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAB39721D7967890024D72D /* BusArrival.swift */; };
+		EBAB39741D7967890024D72D /* BusArrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAB39721D7967890024D72D /* BusArrival.swift */; };
+		EBAB39771D796D7C0024D72D /* BusArrivalsEmpty.txt in Resources */ = {isa = PBXBuildFile; fileRef = EBAB39751D796D7C0024D72D /* BusArrivalsEmpty.txt */; };
+		EBAB39781D796D7C0024D72D /* BusArrivalsEmpty.txt in Resources */ = {isa = PBXBuildFile; fileRef = EBAB39751D796D7C0024D72D /* BusArrivalsEmpty.txt */; };
+		EBAB39791D796D7C0024D72D /* BusArrivalsOneEstimate.txt in Resources */ = {isa = PBXBuildFile; fileRef = EBAB39761D796D7C0024D72D /* BusArrivalsOneEstimate.txt */; };
+		EBAB397A1D796D7C0024D72D /* BusArrivalsOneEstimate.txt in Resources */ = {isa = PBXBuildFile; fileRef = EBAB39761D796D7C0024D72D /* BusArrivalsOneEstimate.txt */; };
+		EBAB397C1D797D8E0024D72D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAB397B1D797D8E0024D72D /* MainViewModel.swift */; };
 		EBAFA86E1D78CAAD00A3DF0A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB9F642B1D787F8500832CC6 /* Info.plist */; };
 		EBAFA86F1D78CAC100A3DF0A /* MapImageAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F64501D78C9F600832CC6 /* MapImageAPIRequest.swift */; };
+		EBAFA8711D78DD8500A3DF0A /* BusArrivalAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAFA8701D78DD8500A3DF0A /* BusArrivalAPIRequest.swift */; };
+		EBAFA8731D79653A00A3DF0A /* BusArrivalsPopulated.txt in Resources */ = {isa = PBXBuildFile; fileRef = EBAFA8721D79653A00A3DF0A /* BusArrivalsPopulated.txt */; };
+		EBAFA8751D79654D00A3DF0A /* BusArrivalAPIRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAFA8741D79654D00A3DF0A /* BusArrivalAPIRequestTests.swift */; };
+		EBAFA8771D79667400A3DF0A /* BusArrivalAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAFA8701D78DD8500A3DF0A /* BusArrivalAPIRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,12 +73,19 @@
 		EB9F64331D7880DE00832CC6 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		EB9F64361D78864700832CC6 /* BusStopsAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStopsAPIRequest.swift; sourceTree = "<group>"; };
 		EB9F643B1D7887D100832CC6 /* BusStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStop.swift; sourceTree = "<group>"; };
-		EB9F643D1D78898400832CC6 /* BusAPIRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusAPIRequestTests.swift; sourceTree = "<group>"; };
+		EB9F643D1D78898400832CC6 /* BusStopsAPIRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStopsAPIRequestTests.swift; sourceTree = "<group>"; };
 		EB9F643F1D7889F000832CC6 /* BusStopsPopulated.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BusStopsPopulated.txt; sourceTree = "<group>"; };
 		EB9F64441D78A6BC00832CC6 /* BusStopsEmpty.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BusStopsEmpty.txt; sourceTree = "<group>"; };
 		EB9F64451D78A6BC00832CC6 /* BusStopsOneLocation.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BusStopsOneLocation.txt; sourceTree = "<group>"; };
 		EB9F644C1D78B50300832CC6 /* BusStopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStopCell.swift; sourceTree = "<group>"; };
 		EB9F64501D78C9F600832CC6 /* MapImageAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapImageAPIRequest.swift; sourceTree = "<group>"; };
+		EBAB39721D7967890024D72D /* BusArrival.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusArrival.swift; sourceTree = "<group>"; };
+		EBAB39751D796D7C0024D72D /* BusArrivalsEmpty.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BusArrivalsEmpty.txt; sourceTree = "<group>"; };
+		EBAB39761D796D7C0024D72D /* BusArrivalsOneEstimate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BusArrivalsOneEstimate.txt; sourceTree = "<group>"; };
+		EBAB397B1D797D8E0024D72D /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		EBAFA8701D78DD8500A3DF0A /* BusArrivalAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusArrivalAPIRequest.swift; sourceTree = "<group>"; };
+		EBAFA8721D79653A00A3DF0A /* BusArrivalsPopulated.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BusArrivalsPopulated.txt; sourceTree = "<group>"; };
+		EBAFA8741D79654D00A3DF0A /* BusArrivalAPIRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusArrivalAPIRequestTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +150,12 @@
 				EB9F64441D78A6BC00832CC6 /* BusStopsEmpty.txt */,
 				EB9F64451D78A6BC00832CC6 /* BusStopsOneLocation.txt */,
 				EB9F643F1D7889F000832CC6 /* BusStopsPopulated.txt */,
+				EBAB39751D796D7C0024D72D /* BusArrivalsEmpty.txt */,
+				EBAB39761D796D7C0024D72D /* BusArrivalsOneEstimate.txt */,
+				EBAFA8721D79653A00A3DF0A /* BusArrivalsPopulated.txt */,
 				EB9F640C1D787DB800832CC6 /* Info.plist */,
-				EB9F643D1D78898400832CC6 /* BusAPIRequestTests.swift */,
+				EB9F643D1D78898400832CC6 /* BusStopsAPIRequestTests.swift */,
+				EBAFA8741D79654D00A3DF0A /* BusArrivalAPIRequestTests.swift */,
 			);
 			path = "Zaragoza’s bus infoTests";
 			sourceTree = "<group>";
@@ -162,6 +184,7 @@
 				EB9F64261D787F7500832CC6 /* LaunchScreen.storyboard */,
 				EB9F64271D787F7500832CC6 /* Main.storyboard */,
 				EB9F642E1D787FC700832CC6 /* MainViewController.swift */,
+				EBAB397B1D797D8E0024D72D /* MainViewModel.swift */,
 				EB9F644C1D78B50300832CC6 /* BusStopCell.swift */,
 			);
 			path = "User interface";
@@ -182,6 +205,7 @@
 				EB9F64331D7880DE00832CC6 /* APIRequest.swift */,
 				EB9F64361D78864700832CC6 /* BusStopsAPIRequest.swift */,
 				EB9F64501D78C9F600832CC6 /* MapImageAPIRequest.swift */,
+				EBAFA8701D78DD8500A3DF0A /* BusArrivalAPIRequest.swift */,
 			);
 			path = Server;
 			sourceTree = "<group>";
@@ -190,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				EB9F643B1D7887D100832CC6 /* BusStop.swift */,
+				EBAB39721D7967890024D72D /* BusArrival.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -302,6 +327,8 @@
 				EBAFA86E1D78CAAD00A3DF0A /* Info.plist in Resources */,
 				EB9F64291D787F7500832CC6 /* Main.storyboard in Resources */,
 				EB9F63FD1D787DB800832CC6 /* Assets.xcassets in Resources */,
+				EBAB39771D796D7C0024D72D /* BusArrivalsEmpty.txt in Resources */,
+				EBAB39791D796D7C0024D72D /* BusArrivalsOneEstimate.txt in Resources */,
 				EB9F64281D787F7500832CC6 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +339,9 @@
 			files = (
 				EB9F64471D78A6BC00832CC6 /* BusStopsOneLocation.txt in Resources */,
 				EB9F64401D7889F000832CC6 /* BusStopsPopulated.txt in Resources */,
+				EBAFA8731D79653A00A3DF0A /* BusArrivalsPopulated.txt in Resources */,
+				EBAB39781D796D7C0024D72D /* BusArrivalsEmpty.txt in Resources */,
+				EBAB397A1D796D7C0024D72D /* BusArrivalsOneEstimate.txt in Resources */,
 				EB9F64461D78A6BC00832CC6 /* BusStopsEmpty.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,9 +360,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBAB39731D7967890024D72D /* BusArrival.swift in Sources */,
 				EB9F643C1D7887D100832CC6 /* BusStop.swift in Sources */,
 				EB9F642C1D787F8500832CC6 /* AppDelegate.swift in Sources */,
 				EB9F64511D78C9F600832CC6 /* MapImageAPIRequest.swift in Sources */,
+				EBAFA8711D78DD8500A3DF0A /* BusArrivalAPIRequest.swift in Sources */,
+				EBAB397C1D797D8E0024D72D /* MainViewModel.swift in Sources */,
 				EB9F64371D78864700832CC6 /* BusStopsAPIRequest.swift in Sources */,
 				EB9F644D1D78B50300832CC6 /* BusStopCell.swift in Sources */,
 				EB9F64351D78851B00832CC6 /* APIRequest.swift in Sources */,
@@ -345,9 +378,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBAFA86F1D78CAC100A3DF0A /* MapImageAPIRequest.swift in Sources */,
+				EBAFA8751D79654D00A3DF0A /* BusArrivalAPIRequestTests.swift in Sources */,
 				EB9F64411D788A9C00832CC6 /* BusStop.swift in Sources */,
-				EB9F643E1D78898400832CC6 /* BusAPIRequestTests.swift in Sources */,
+				EBAFA8771D79667400A3DF0A /* BusArrivalAPIRequest.swift in Sources */,
+				EB9F643E1D78898400832CC6 /* BusStopsAPIRequestTests.swift in Sources */,
 				EB9F64431D788D2C00832CC6 /* APIRequest.swift in Sources */,
+				EBAB39741D7967890024D72D /* BusArrival.swift in Sources */,
 				EB9F64421D788AA400832CC6 /* BusStopsAPIRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

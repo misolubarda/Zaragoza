@@ -8,8 +8,6 @@
 
 import Foundation
 
-import Foundation
-
 struct MapImageAPIRequest: APIRequest {
     
     /// Required by protocol (see APIRequest)
@@ -31,11 +29,5 @@ struct MapImageAPIRequest: APIRequest {
     
     init(responseQueue: dispatch_queue_t = dispatch_get_main_queue()) {
         self.responseQueue = responseQueue
-    }
-}
-
-extension MapImageAPIRequest {
-    enum MapImageAPIRequestError: ErrorType {
-        case JSONFromData, Locations
     }
 }
